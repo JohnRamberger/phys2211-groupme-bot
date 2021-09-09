@@ -4,5 +4,12 @@
             "$github"
         ],
         "response": "https://github.com/JohnRamberger/phys2211-groupme-bot"
+    },
+    {
+        "keywords":[
+            "$keyword",
+            "$second keyword"
+        ],
+        "response": "response text"
     }
 ]
