@@ -17,7 +17,9 @@
     {
         "keywords":[
             "$nextduedate",
-            "$duedates"
+            "$duedates",
+            "what's due?",
+            "whats due?"
         ],
         "response": "Due Sep. 19: lab 1 peer grading, GPS week 4, homework week 4, reading week 5\nDue Sep. 20: TEST 1!"
     },
@@ -26,7 +28,7 @@
             "$istherelab",
             "lab?"
         ],
-        "response": "Not this week."
+        "response": "probably"
     },
     {
         "keywords":[
