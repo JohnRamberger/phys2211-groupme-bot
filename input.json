@@ -64,5 +64,14 @@
             "$pluslink"
         ],
         "response": "https://bluejeans.com/195881183/1306"
+    },
+    {
+        "keywords":[
+            "$exam",
+            "$exam1",
+            "$test",
+            "$test1"
+        ],
+        "response": "https://edstem.org/us/courses/7931/discussion/607501"
     }
 ]
