@@ -26,6 +26,8 @@
     {
         "keywords":[
             "$istherelab",
+            "$lab",
+            "$lab?",
             "lab?"
         ],
         "response": "Yep.\nworking on week 4 GPS"
