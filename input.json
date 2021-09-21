@@ -21,7 +21,7 @@
             "what's due?",
             "whats due?"
         ],
-        "response": "Due Sep. 20: TEST 1!\n\nDue Sep. 26: lab 2 grading practice, lab 2!!!, homework 5 (soft deadline), reading week 6 (extra bucket points)"
+        "response": "Due Sep. 26: lab 2 grading practice, lab 2!!!, homework 5 (soft deadline), reading week 6 (extra bucket points)"
     },
     {
         "keywords":[
@@ -74,7 +74,7 @@
             "$test",
             "$test1"
         ],
-        "response": "https://edstem.org/us/courses/7931/discussion/620332"
+        "response": "complete!"
     },
     {
         "keywords":[
