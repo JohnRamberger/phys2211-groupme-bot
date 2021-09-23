@@ -1,7 +1,7 @@
 var http, director, bot, router, server, port;
 
 http = require('http');
-director = require('director');
+//director = require('director');
 bot = require('./bot.js');
 
 router = new director.http.Router({
@@ -11,13 +11,13 @@ router = new director.http.Router({
     }
 });
 
-server = http.createServer(function (req, res) {
+server = http.createServer(function(req, res) {
     req.chunks = [];
-    req.on('data', function (chunk) {
+    req.on('data', function(chunk) {
         req.chunks.push(chunk.toString());
     });
 
-    router.dispatch(req, res, function (err) {
+    router.dispatch(req, res, function(err) {
         res.writeHead(err.status, { "Content-Type": "text/plain" });
         res.end(err.message);
     });
