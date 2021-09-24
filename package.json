@@ -1,25 +1,29 @@
 {
-	"name": "phys2211-groupme-bot",
-	"version": "0.1.0",
-	"description": "a bot for the phys2211 groupme",
-	"main": "index.js",
-	"scripts": {
-		"start": "node index.js"
-	},
-	"dependencies": {
-		"director": ""
-	},
-	"engines": {
-		"node": "0.10.x"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/JohnRamberger/phys2211-groupme-bot"
-	},
-	"keywords": [
-		"node",
-		"heroku",
-		"express"
-	],
-	"license": ""
+    "name": "phys2211-groupme-bot",
+    "version": "0.1.0",
+    "description": "a bot for the phys2211 groupme",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "director": "^1.2.8",
+        "node-pre-gyp": "^0.17.0",
+        "sqlite": "^4.0.23",
+        "sqlite3": "^5.0.2"
+    },
+    "engines": {
+        "node": "12.22.6"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JohnRamberger/phys2211-groupme-bot"
+    },
+    "keywords": [
+        "node",
+        "heroku",
+        "express"
+    ],
+    "license": "",
+    "devDependencies": {}
 }
