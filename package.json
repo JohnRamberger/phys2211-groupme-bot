@@ -7,7 +7,9 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "director": ""
+        "director": "",
+        "sqlite": "^4.0.23",
+        "sqlite3": "^5.0.0"
     },
     "repository": {
         "type": "git",
