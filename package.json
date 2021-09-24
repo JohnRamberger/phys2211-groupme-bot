@@ -7,7 +7,9 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "director": "^1.2.8"
+        "director": "^1.2.8",
+        "sqlite": "^4.0.23",
+        "sqlite3": "^5.0.2"
     },
     "engines": {
         "node": "12.22.6"
