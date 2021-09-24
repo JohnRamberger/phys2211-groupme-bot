@@ -4,7 +4,7 @@ const db = require('db.js');
 
 var botID = process.env.BOT_ID;
 
-function respond() {
+async function respond() {
     var request = JSON.parse(this.req.chunks[0]);
     if (request.sender_type == "bot") {
         //no communicating with other bots ;_;
