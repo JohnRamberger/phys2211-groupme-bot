@@ -30,7 +30,8 @@ async function respond() {
 
             //update statistics
             await db.insert_command(request.user_id, text, new Date());
-
+            let count = await db.command_count(text);
+            console.log(`${text} command used ${count} times`);
             return;
         }
         i++;
