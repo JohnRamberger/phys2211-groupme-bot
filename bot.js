@@ -1,6 +1,6 @@
 var HTTPS = require('https');
 const fs = require('fs');
-const db = require('db.js');
+const db = require('./db.js');
 
 var botID = process.env.BOT_ID;
 
