@@ -4,14 +4,14 @@
     "description": "a bot for the phys2211 groupme",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js"
+        "start": "node index.js",
+        "test": "sanitycheck && <test runner>"
     },
     "dependencies": {
-        "director": "^1.2.8",
-        "sqlite3": "^5.0.2"
+        "director": "^1.2.8"
     },
     "engines": {
-        "node": "13.14.0"
+        "node": "12.22.6"
     },
     "repository": {
         "type": "git",
@@ -22,5 +22,6 @@
         "heroku",
         "express"
     ],
-    "license": ""
+    "license": "",
+    "devDependencies": {}
 }
