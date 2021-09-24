@@ -22,7 +22,7 @@ async function respond() {
     while (i < input.length) {
         if (input[i].keywords.indexOf(text) >= 0) {
             this.res.writeHead(200);
-            //delay sending of message to prevent predicitng the future
+            //delay sending of message to prevent predicting the future
             setTimeout(() => {
                 postMessage(input[i].response);
             }, 1000);
