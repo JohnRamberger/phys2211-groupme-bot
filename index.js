@@ -52,6 +52,8 @@ let interval = setInterval(() => {
     }
 }, 60 * 1000);
 
+var botID = process.env.BOT_ID;
+
 function postAnnouncement(_datetime, _message) {
     var botResponse, options, body, botReq;
 
