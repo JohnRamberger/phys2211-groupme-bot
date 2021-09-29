@@ -51,10 +51,10 @@ let interval = setInterval(() => {
             
             if (difMins == -60) {
                 //due in 1 hour
-                postAnnouncement(datetime, "1 hour away:\n", message);
+                //postAnnouncement(datetime, "1 hour away:\n", message);
             } else if (difMins == -10){
                 //due in 10 minutes
-                postAnnouncement(datetime, "10 minutes away:\n", message);
+                //postAnnouncement(datetime, "10 minutes away:\n", message);
             }
         }
     }
