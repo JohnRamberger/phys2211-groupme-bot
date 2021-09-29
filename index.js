@@ -59,7 +59,7 @@ let interval = setInterval(() => {
         }
     }
     for (var r of recur) {
-        var days = r.days.split(' ');
+        var days = r.day.split(' ');
         var time = r.time;
         var message = r.message;
 
