@@ -48,8 +48,10 @@ let interval = setInterval(() => {
 
         let difMins = getMinutes(datetime);
         //console.log(difMins);
-
-        if (difMins == -60) {
+        if (difMins == -60 * 6) {
+            //due in 6 hours
+            postAnnouncement(datetime, "6 hours away:\n", message);
+        } else if (difMins == -60) {
             //due in 1 hour
             postAnnouncement(datetime, "1 hour away:\n", message);
         } else if (difMins == -10) {
@@ -63,13 +65,13 @@ let interval = setInterval(() => {
         var message = r.message;
 
         var today = new Date();
-        for(var day of days){
-            if(getDay(day) == today.getDay()){
+        for (var day of days) {
+            if (getDay(day) == today.getDay()) {
                 //today
                 let diffMins = getMinutes(new Date(`${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()} ${time}`), today);
                 //console.log(diffMins)
-                if(diffMins == 0){
-                    console.log("send ann ")
+                if (diffMins == 0) {
+                    postAnnouncement(today, "", message);
                 }
             }
         }
