@@ -42,10 +42,13 @@ let interval = setInterval(() => {
         var now = new Date();
         var message = a.message;
 
+        let difMins = getMinutes(datetime);
+        console.log("a")
+        console.log(difMins);
+
         if (now.getUTCFullYear() == datetime.getUTCFullYear() && now.getUTCMonth() == datetime.getUTCMonth() && now.getUTCDate() == datetime.getUTCDate()) {
             //on same day
-            let difMins = getMinutes(datetime);
-            console.log(difMins);
+            
             if (difMins == -60) {
                 //due in 1 hour
                 postAnnouncement(datetime, "1 hour away:\n", message);
