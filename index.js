@@ -4,6 +4,7 @@ http = require('http');
 director = require('director');
 bot = require('./bot.js');
 const fs = require('fs');
+var HTTPS = require('https');
 
 router = new director.http.Router({
     '/': {
