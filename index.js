@@ -12,13 +12,13 @@ router = new director.http.Router({
     }
 });
 
-server = http.createServer(function (req, res) {
+server = http.createServer(function(req, res) {
     req.chunks = [];
-    req.on('data', function (chunk) {
+    req.on('data', function(chunk) {
         req.chunks.push(chunk.toString());
     });
 
-    router.dispatch(req, res, function (err) {
+    router.dispatch(req, res, function(err) {
         res.writeHead(err.status, { "Content-Type": "text/plain" });
         res.end(err.message);
     });
@@ -36,24 +36,53 @@ function ping() {
 var announcementsRaw = fs.readFileSync('announcements.json');
 var ann = JSON.parse(announcementsRaw);
 let interval = setInterval(() => {
-    for(var a of ann){
+    for (var a of ann) {
         var datetime = new Date(a.datetime);
         var now = new Date();
         var message = a.message;
 
-        if(now.getUTCFullYear() == datetime.getUTCFullYear() && now.getUTCMonth() == datetime.getUTCMonth() && now.getUTCDate() == datetime.getUTCDate()){
+        if (now.getUTCFullYear() == datetime.getUTCFullYear() && now.getUTCMonth() == datetime.getUTCMonth() && now.getUTCDate() == datetime.getUTCDate()) {
             //on same day
 
             //announce 1 hour before due
-            if(now.getUTCMinutes() == datetime.getUTCMinutes() && datetime.getUTCHours() - now.getUTCHours() == 1){
-                sendAnnouncement(datetime, message);
+            if (now.getUTCMinutes() == datetime.getUTCMinutes() && datetime.getUTCHours() - now.getUTCHours() == 1) {
+                postAnnouncement(datetime, message);
             }
         }
     }
 }, 60 * 1000);
 
+function postAnnouncement(_datetime, _message) {
+    var botResponse, options, body, botReq;
 
+    botResponse = _message;
 
-function sendAnnouncement(datetime, message){
-    console.log(`[${datetime}] sent message ${message}`);
+    options = {
+        hostname: 'api.groupme.com',
+        path: '/v3/bots/post',
+        method: 'POST'
+    };
+
+    body = {
+        "bot_id": botID,
+        "text": botResponse
+    };
+
+    console.log(`[${datetime}] sent announcement  |${message}|`);
+
+    botReq = HTTPS.request(options, function(res) {
+        if (res.statusCode == 202) {
+            //neat
+        } else {
+            console.log('rejecting bad status code ' + res.statusCode);
+        }
+    });
+
+    botReq.on('error', function(err) {
+        console.log('error posting message ' + JSON.stringify(err));
+    });
+    botReq.on('timeout', function(err) {
+        console.log('timeout posting message ' + JSON.stringify(err));
+    });
+    botReq.end(JSON.stringify(body));
 }
