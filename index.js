@@ -40,7 +40,15 @@ let interval = setInterval(() => {
         var datetime = new Date(a.datetime);
         var now = new Date();
         var message = a.message;
+
+        console.log(`${now.getUTCFullYear()} = ${datetime.getUTCFullYear()}`)
+        console.log(`${now.getUTCMonth()} = ${datetime.getUTCMonth()}`)
+        console.log(`${now.getUTCDate()} = ${datetime.getUTCDate()}`)
+        console.log(`${now.getUTCHours()} = ${datetime.getUTCHours()}`)
+        console.log(`${now.getUTCMinutes()} = ${datetime.getUTCMinutes()}`)
         //console.log(`${now.getUTCFullYear()} = ${datetime.getUTCFullYear()}`)
+
+
         if(now.getUTCFullYear() == datetime.getUTCFullYear() && now.getUTCMonth() == datetime.getUTCMonth() && now.getUTCDate() == datetime.getUTCDate()){
             //on same day
 
