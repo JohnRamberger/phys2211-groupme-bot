@@ -41,11 +41,11 @@ let interval = setInterval(() => {
         var now = new Date();
         var message = a.message;
 
-        console.log(`${now.getUTCFullYear()} = ${datetime.getUTCFullYear()}`)
-        console.log(`${now.getUTCMonth()} = ${datetime.getUTCMonth()}`)
-        console.log(`${now.getUTCDate()} = ${datetime.getUTCDate()}`)
-        console.log(`${now.getUTCHours()} = ${datetime.getUTCHours()}`)
-        console.log(`${now.getUTCMinutes()} = ${datetime.getUTCMinutes()}`)
+        //console.log(`${now.getUTCFullYear()} = ${datetime.getUTCFullYear()}`)
+        //console.log(`${now.getUTCMonth()} = ${datetime.getUTCMonth()}`)
+        //console.log(`${now.getUTCDate()} = ${datetime.getUTCDate()}`)
+        //console.log(`${now.getUTCHours()} = ${datetime.getUTCHours()}`)
+        //console.log(`${now.getUTCMinutes()} = ${datetime.getUTCMinutes()}`)
         //console.log(`${now.getUTCFullYear()} = ${datetime.getUTCFullYear()}`)
 
 
