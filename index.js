@@ -68,6 +68,7 @@ let interval = setInterval(() => {
             if(getDay(day) == today.getDay()){
                 //today
                 let diffMins = getMinutes(new Date(`${today.getMonth()}/${today.getDate()}/${today.getFullYear()} ${time}`), today);
+                console.log(diffMins)
                 if(diffMins == 0){
                     console.log("send ann ")
                 }
