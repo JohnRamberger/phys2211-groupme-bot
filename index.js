@@ -44,18 +44,31 @@ let interval = setInterval(() => {
 
         if (now.getUTCFullYear() == datetime.getUTCFullYear() && now.getUTCMonth() == datetime.getUTCMonth() && now.getUTCDate() == datetime.getUTCDate()) {
             //on same day
-
-            //announce 1 hour before due
-            if (now.getUTCMinutes() == datetime.getUTCMinutes() && datetime.getUTCHours() - now.getUTCHours() == 1) {
-                postAnnouncement(datetime, message);
+            let difMins = getMinutes(datetime);
+            console.log(difMins);
+            if (difMins == -60) {
+                //due in 1 hour
+                postAnnouncement(datetime, "1 hour away:\n", message);
+            } else if (difMins == -10){
+                //due in 10 minutes
+                postAnnouncement(datetime, "10 minutes away:\n", message);
             }
         }
     }
 }, 60 * 1000);
 
+function getMinutes(_datetime) {
+    var today = new Date();
+    var diffMs = (_datetime - today); // milliseconds between now & Christmas
+    var diffDays = Math.floor(diffMs / 86400000); // days
+    var diffHrs = Math.floor((diffMs % 86400000) / 3600000); // hours
+    var diffMins = Math.floor(((diffMs % 86400000) % 3600000) / 60000); // minutes
+    return diffMins;
+}
+
 var botID = process.env.BOT_ID;
 
-function postAnnouncement(_datetime, _message) {
+function postAnnouncement(_datetime, _pre, _message) {
     var botResponse, options, body, botReq;
 
     botResponse = _message;
