@@ -58,7 +58,7 @@ let interval = setInterval(() => {
             }
         }
     }
-}, 60 * 1000);
+}, 10 * 1000);
 
 function getMinutes(_datetime) {
     var today = new Date();
