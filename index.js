@@ -32,12 +32,27 @@ function ping() {
     this.res.end("Hey! the chatbot is currently running :)");
 }
 
+//setup announcements
 var announcementsRaw = fs.readFileSync('announcements.json');
 var ann = JSON.parse(announcementsRaw);
-for(var a of ann){
-    console.log(a);
-}
+let interval = setInterval(() => {
+    for(var a of ann){
+        var datetime = new Date(a.datetime);
+        var now = new Date();
+        var message = a.message;
+        if(now.getUTCFullYear() == datetime.getUTCFullYear() && now.getUTCMonth() == datetime.getUTCMonth() && now.getUTCDate() == datetime.getUTCDate()){
+            //on same day
 
-function sendAnnouncement(){
+            //announce 1 hour before due
+            if(now.getUTCMinutes == datetime.getUTCMinutes && datetime.getUTCHours - now.getUTCHours == 1){
+                sendAnnouncement(datetime, message);
+            }
+        }
+    }
+}, 60 * 1000);
 
+
+
+function sendAnnouncement(datetime, message){
+    console.log(`[${datetime}] sent message ${message}`);
 }
