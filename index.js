@@ -63,10 +63,8 @@ let interval = setInterval(() => {
 function getMinutes(_datetime) {
     var today = new Date();
     var diffMs = (today - _datetime); // milliseconds between now & Christmas
-    var diffDays = Math.floor(diffMs / 86400000); // days
-    var diffHrs = Math.floor((diffMs % 86400000) / 3600000); // hours
-    var diffMins = Math.floor(((diffMs % 86400000) % 3600000) / 60000); // minutes
-    return diffMs;
+    var diffMins = Math.floor(diffMs / 1000 / 60);
+    return diffMins;
 }
 
 var botID = process.env.BOT_ID;
