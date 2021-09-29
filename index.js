@@ -70,7 +70,7 @@ function postAnnouncement(_datetime, _message) {
         "text": botResponse
     };
 
-    console.log(`[${_datetime}] sent announcement  |${message}|`);
+    console.log(`[${_datetime}] sent announcement  |${_message}|`);
 
     botReq = HTTPS.request(options, function(res) {
         if (res.statusCode == 202) {
