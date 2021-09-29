@@ -53,7 +53,7 @@ let interval = setInterval(() => {
             //on same day
 
             //announce 1 hour before due
-            if(now.getUTCMinutes() == datetime.getUTCMinutes() && datetime.getUTCHours() - now.getUTCHours() == 1){
+            if(now.getUTCMinutes() == datetime.getUTCMinutes() && datetime.getUTCHours() - now.getUTCHours() == 2){
                 sendAnnouncement(datetime, message);
             }
         }
