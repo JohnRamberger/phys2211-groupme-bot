@@ -142,3 +142,8 @@ function postAnnouncement(_datetime, _pre, _message) {
     });
     botReq.end(JSON.stringify(body));
 }
+
+//prevent app from sleeping
+setInterval(function() {
+    http.get("http://phys2211bot.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
