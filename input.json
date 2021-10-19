@@ -79,8 +79,10 @@
     {
         "keywords":[
             "$formula sheet",
-            "$formulas"
+            "$formulasheet",
+            "$formulas",
+            "$cheatsheet"
         ],
-        "response": "https://edstem.org/us/courses/7931/discussion/620392"
+        "response": "https://docs.google.com/document/d/1LRBLafgKJcv0SHPbttXNWrq6CKcmkySXpEpssoosEaI/edit?usp=sharing"
     }
 ]
