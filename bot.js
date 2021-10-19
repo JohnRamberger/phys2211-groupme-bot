@@ -19,7 +19,7 @@ async function respond() {
     var rawdata = fs.readFileSync("input.json");
     var input = JSON.parse(rawdata);
 
-    switch (input[i].keywords) {
+    switch (text) {
         case "$quote":
         case "$motivation":
             this.res.writeHead(200);
