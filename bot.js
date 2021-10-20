@@ -30,7 +30,7 @@ async function respond() {
                     if (err) {
                         return console.log(err);
                     }
-                    console.log(body[0]);
+                    console.log(body[0].q);
                     //console.log(body.url);
                     //console.log(body.explanation);
                 });
