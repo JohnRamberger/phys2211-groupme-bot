@@ -21,25 +21,29 @@ async function respond() {
     switch (text) {
         case "$quote":
         case "$motivation":
-            this.res.writeHead(200);
-            //get motivational quote
-            let url = "https://zenquotes.io/api/random";
+            try {
+                this.res.writeHead(200);
+                //get motivational quote
+                let url = "https://zenquotes.io/api/random";
 
-            request(url, { json: true }, (err, res, body) => {
-                console.log(1);
-                if (err) {
-                    console.log(err);
-                    return;
-                }
-                console.log(res);
-                console.log(body.url);
-                console.log(body.explanation);
-            });
-            //send message
-            //postMessage(`${data.q} —${data.a}`);
+                request(url, { json: true }, (err, res, body) => {
+                    console.log(1);
+                    if (err) {
+                        console.log(err);
+                        return;
+                    }
+                    console.log(res);
+                    console.log(body.url);
+                    console.log(body.explanation);
+                });
+                //send message
+                //postMessage(`${data.q} —${data.a}`);
 
-            this.res.end();
-            break;
+                this.res.end();
+                break;
+            } catch (err) {
+                console.log(err);
+            }
         default:
             var match = false;
             var i = 0;
