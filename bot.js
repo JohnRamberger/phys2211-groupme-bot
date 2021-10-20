@@ -1,7 +1,7 @@
 var HTTPS = require("https");
 const fs = require("fs");
 const db = require("./db.js");
-const request = require("request");
+const req = require("request");
 
 var botID = process.env.BOT_ID;
 
@@ -26,7 +26,7 @@ async function respond() {
                 //get motivational quote
                 let url = "https://zenquotes.io/api/random";
 
-                request(url, { json: true }, (err, res, body) => {
+                req(url, { json: true }, (err, res, body) => {
                     console.log(1);
                     if (err) {
                         console.log(err);
