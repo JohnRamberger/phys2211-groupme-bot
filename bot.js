@@ -26,9 +26,12 @@ async function respond() {
             let url = "https://zenquotes.io/api/random";
 
             request(url, { json: true }, (err, res, body) => {
+                console.log(1);
                 if (err) {
-                    return console.log(err);
+                    console.log(err);
+                    return;
                 }
+                console.log(res);
                 console.log(body.url);
                 console.log(body.explanation);
             });
