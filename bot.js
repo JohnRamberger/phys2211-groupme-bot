@@ -30,12 +30,14 @@ async function respond() {
                     if (err) {
                         return console.log(err);
                     }
+                    let quote = body[0];
+                    //send message
+                    postMessage(`${quote.q} —${quote.a}`);
+
                     console.log(body[0].q);
                     //console.log(body.url);
                     //console.log(body.explanation);
                 });
-                //send message
-                //postMessage(`${data.q} —${data.a}`);
 
                 this.res.end();
                 break;
