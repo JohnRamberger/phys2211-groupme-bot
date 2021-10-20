@@ -1,7 +1,7 @@
 var HTTPS = require("https");
 const fs = require("fs");
 const db = require("./db.js");
-const fetch = require('node-fetch');
+const https = require("https");
 
 var botID = process.env.BOT_ID;
 
@@ -23,10 +23,25 @@ async function respond() {
         case "$motivation":
             this.res.writeHead(200);
             //get motivational quote
-            let res = await fetch("https://zenquotes.io/api/random");
-            let json = res.json();
-            //send message
-            postMessage(`${json.q} —${json.a}`);
+            let url = "https://zenquotes.io/api/random";
+
+            https
+                .get(url, (res) => {
+                    let data = "";
+                    res.on("data", (chunk) => {
+                        data += chunk;
+                    });
+                    res.on("end", () => {
+                        data = JSON.parse(data);
+                        //send message
+                        postMessage(`${data.q} —${data.a}`);
+                    });
+                })
+                .on("error", (err) => {
+                    console.log(err.message);
+                })
+                .end();
+
             this.res.end();
             break;
         default:
