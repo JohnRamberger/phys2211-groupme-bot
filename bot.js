@@ -1,8 +1,6 @@
 var HTTPS = require("https");
 const fs = require("fs");
 const db = require("./db.js");
-//quotes
-const Quote = require("inspirational-quotes");
 
 var botID = process.env.BOT_ID;
 
@@ -23,11 +21,11 @@ async function respond() {
         case "$quote":
         case "$motivation":
             this.res.writeHead(200);
-            //delay sending of message to prevent predicting the future
-            let motivation = Quote.getQuote();
-            setTimeout(() => {
-                postMessage(`${motivation.text} —${motivation.author}`);
-            }, 1000);
+            //get motivational quote
+            let res = await fetch("https://zenquotes.io/api/random");
+            let json = res.json();
+            //send message
+            postMessage(`${json.q} —${json.a}`);
             this.res.end();
             break;
         default:
