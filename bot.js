@@ -31,7 +31,7 @@ async function respond() {
                     if (err) {
                         return console.log(err);
                     }
-                    console.log(body);
+                    console.log(body.q);
                     //console.log(body.url);
                     //console.log(body.explanation);
                 });
