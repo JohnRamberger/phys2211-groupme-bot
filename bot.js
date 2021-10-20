@@ -34,7 +34,7 @@ async function respond() {
                     //send message
                     postMessage(`${quote.q} —${quote.a}`);
 
-                    console.log(body[0].q);
+                    //console.log(body[0].q);
                     //console.log(body.url);
                     //console.log(body.explanation);
                 });
