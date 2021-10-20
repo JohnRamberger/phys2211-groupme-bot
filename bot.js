@@ -27,11 +27,10 @@ async function respond() {
                 let url = "https://zenquotes.io/api/random";
 
                 req(url, { json: true }, (err, res, body) => {
-                    console.log(1);
                     if (err) {
                         return console.log(err);
                     }
-                    console.log(body.q);
+                    console.log(JSON.parse(body).q);
                     //console.log(body.url);
                     //console.log(body.explanation);
                 });
