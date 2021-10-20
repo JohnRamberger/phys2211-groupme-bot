@@ -8,7 +8,6 @@
     },
     "dependencies": {
         "director": "^1.2.8",
-        "inspirational-quotes": "^2.0.1",
         "node-pre-gyp": "^0.17.0",
         "sqlite": "^4.0.23",
         "sqlite3": "^5.0.2"
