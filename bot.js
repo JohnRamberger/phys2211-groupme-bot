@@ -1,7 +1,7 @@
 var HTTPS = require("https");
 const fs = require("fs");
 const db = require("./db.js");
-import fetch from "node-fetch";
+const fetch = require('node-fetch');
 
 var botID = process.env.BOT_ID;
 
