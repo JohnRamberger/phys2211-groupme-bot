@@ -29,12 +29,11 @@ async function respond() {
                 req(url, { json: true }, (err, res, body) => {
                     console.log(1);
                     if (err) {
-                        console.log(err);
-                        return;
+                        return console.log(err);
                     }
                     console.log(res);
-                    console.log(body.url);
-                    console.log(body.explanation);
+                    //console.log(body.url);
+                    //console.log(body.explanation);
                 });
                 //send message
                 //postMessage(`${data.q} —${data.a}`);
