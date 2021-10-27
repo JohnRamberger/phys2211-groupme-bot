@@ -31,8 +31,10 @@ async function respond() {
                         return console.log(err);
                     }
                     let quote = body[0];
-                    //send message
-                    postMessage(`${quote.q} —${quote.a}`);
+                    //delay sending of message to prevent predicting the future
+                    setTimeout(() => {
+                        postMessage(`${quote.q} —${quote.a}`);
+                    }, 1000);
 
                     //console.log(body[0].q);
                     //console.log(body.url);
