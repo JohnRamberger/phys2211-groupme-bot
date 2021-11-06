@@ -21,7 +21,7 @@
             "what's due?",
             "whats due?"
         ],
-        "response": "Due Oct 31👻: Lab 4 peer review, homework week 10(soft deadline), reading week 11(extra bucket points)"
+        "response": "Due Nov 7: Lab 5!!! (can turn in by monday 11:59pm), homework 11 (soft deadline), reading week 12 (extra bucket points)"
     },
     {
         "keywords":[
@@ -30,7 +30,7 @@
             "$lab?",
             "lab?"
         ],
-        "response": "yep, we'll be doing week 10 GPS"
+        "response": "yep"
     },
     {
         "keywords":[
