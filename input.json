@@ -1,12 +1,12 @@
 [
     {
-        "keywords":[
+        "keywords": [
             "$github"
         ],
         "response": "https://github.com/JohnRamberger/phys2211-groupme-bot"
     },
     {
-        "keywords":[
+        "keywords": [
             "$sessionid",
             "$turningpoint",
             "$tp",
@@ -15,16 +15,16 @@
         "response": "The TurningPoint code is fenton2211"
     },
     {
-        "keywords":[
+        "keywords": [
             "$nextduedate",
             "$duedates",
             "what's due?",
             "whats due?"
         ],
-        "response": "Due Nov 14: lab 5!! (might not be able to submit late!!), test 2 wrapper (extra bucket points), homework 12 (soft deadline), reading week 13 (extra bucket points)\nDue Nov 15: Test 3!!!!!!!"
+        "response": "Due Nov 14: lab 5!! (Peer graded!), test 2 wrapper (extra bucket points), homework 12 (soft deadline), reading week 13 (extra bucket points)\nDue Nov 15: Test 3!!!!!!!"
     },
     {
-        "keywords":[
+        "keywords": [
             "$istherelab",
             "$lab",
             "$lab?",
@@ -33,14 +33,14 @@
         "response": "yep, week 12 gps"
     },
     {
-        "keywords":[
+        "keywords": [
             "$canwegetthrough1slidewithout1millionquestions",
             "can we get through 1 slide without 1 million questions?"
         ],
         "response": "no."
     },
     {
-        "keywords":[
+        "keywords": [
             "$lecture",
             "$teamslink",
             "$msteams"
@@ -48,13 +48,13 @@
         "response": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWUxZjEwZjEtNDRhNC00ZjllLTgxZjgtZGFlZjAyZTZiNTAy%40thread.v2/0?context=%7b%22Tid%22%3a%22482198bb-ae7b-4b25-8b7a-6d7f32faa083%22%2c%22Oid%22%3a%2208b7cb88-52b2-4ab3-9cfe-5479dcccadd7%22%7d"
     },
     {
-        "keywords":[
+        "keywords": [
             "$notes"
         ],
         "response": "https://docs.google.com/document/d/19lfKC3UcsSv26KJJ3SyFAnu_6ZPV_pOs3dul_8i3IG0/edit?usp=sharing"
     },
     {
-        "keywords":[
+        "keywords": [
             "$plus",
             "$plus session",
             "$plussession"
@@ -62,22 +62,22 @@
         "response": "For those of you who are not familiar with PLUS Sessions, during these, we will take time to do practice problems and discuss concepts covered during lectures.\n\nSchedule:\nTuesdays from 8 pm - 9 pm in Clough Undergraduate Learning Commons Room 323\nThursdays from 7 pm - 8 pm (6pm-7pm this week) virtually via the link from $pluslink"
     },
     {
-        "keywords":[
+        "keywords": [
             "$pluslink"
         ],
         "response": "https://bluejeans.com/195881183/1306"
     },
     {
-        "keywords":[
+        "keywords": [
             "$exam",
             "$exam3",
             "$test",
             "$test3"
         ],
-        "response": "coming up! Monday, Nov 15."
+        "response": "coming up! Monday, Nov 15.\nTest Locations:\nIf your last name begins with A - L, you will take your exam in CULC 144\nIf your last name begins with M - Z, you will take your exam in CULC 152\nIf you have ODS exam accommodations, you will take your exam in Howey S-104\n\nhttps://edstem.org/us/courses/7931/discussion/830117"
     },
     {
-        "keywords":[
+        "keywords": [
             "$formula sheet",
             "$formulasheet",
             "$formulas",
