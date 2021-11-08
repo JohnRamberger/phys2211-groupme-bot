@@ -5,6 +5,6 @@
     },
     {
         "datetime": "Nov 15 2021 6:30 PM GMT-0500",
-        "message": "Test 3!!!!!"
+        "message": "Test 3!!!!!\n use $test for more info"
     }
 ]
