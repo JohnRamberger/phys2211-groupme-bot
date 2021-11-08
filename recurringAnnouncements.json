@@ -13,5 +13,10 @@
         "day": "thursday",
         "time": "5:00 PM GMT-0400",
         "message": "in 1 hour:\nplus session from 6 pm - 7 pm virtually via the link from $pluslink"
+    },
+    {
+        "day": "monday",
+        "time": "11:16 AM GMT-0400",
+        "message": "ignore this."
     }
 ]
