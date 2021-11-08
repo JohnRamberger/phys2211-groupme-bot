@@ -21,7 +21,7 @@
             "what's due?",
             "whats due?"
         ],
-        "response": "Due Nov 7: homework 11 (soft deadline), reading week 12 (extra bucket points)"
+        "response": "Due Nov 14: lab 5!! (might not be able to submit late!!), test 2 wrapper (extra bucket points), homework 12 (soft deadline), reading week 13 (extra bucket points)\nDue Nov 15: Test 3!!!!!!!"
     },
     {
         "keywords":[
@@ -30,7 +30,7 @@
             "$lab?",
             "lab?"
         ],
-        "response": "yep"
+        "response": "yep, week 12 gps"
     },
     {
         "keywords":[
@@ -70,11 +70,11 @@
     {
         "keywords":[
             "$exam",
-            "$exam2",
+            "$exam3",
             "$test",
-            "$test2"
+            "$test3"
         ],
-        "response": "all finished! 🥰\ntry to take a break before the next exam (and lab 🙄)"
+        "response": "coming up! Monday, Nov 15."
     },
     {
         "keywords":[
