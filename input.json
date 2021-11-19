@@ -21,7 +21,7 @@
             "what's due?",
             "whats due?"
         ],
-        "response": "Due Nov 14: lab 5!! (Peer graded!), test 2 wrapper (extra bucket points), homework 12 (soft deadline), reading week 13 (extra bucket points)\nDue Nov 15: Test 3!!!!!!!"
+        "response": "Due Nov 21: lab 5 peer grading, homework week 13 (soft deadline), public lecture review 2 (extra bucket points)"
     },
     {
         "keywords": [
@@ -30,7 +30,7 @@
             "$lab?",
             "lab?"
         ],
-        "response": "yep, week 12 gps"
+        "response": "nope, only week 14/15 gps left the week after thanksgiving."
     },
     {
         "keywords": [
@@ -74,7 +74,7 @@
             "$test",
             "$test3"
         ],
-        "response": "coming up! Monday, Nov 15.\nTest Locations:\nIf your last name begins with A - L, you will take your exam in CULC 144\nIf your last name begins with M - Z, you will take your exam in CULC 152\nIf you have ODS exam accommodations, you will take your exam in Howey S-104\n\nhttps://edstem.org/us/courses/7931/discussion/830117"
+        "response": "all done! get some rest before the final exam :)"
     },
     {
         "keywords": [
